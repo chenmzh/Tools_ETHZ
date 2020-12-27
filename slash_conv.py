@@ -9,7 +9,7 @@ abs_file_path = os.path.join(script_dir, rel_path)
 # Enter the input
 address = input("Please enter the string you want to convert and press enter:")
 # Split first and then join by /
-temp = address.split("\\")
+temp = address.split(os.sep)
 output = "/".join(temp)
 
 # Create a file and Print the output
